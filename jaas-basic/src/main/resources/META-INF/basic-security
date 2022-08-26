@@ -1,0 +1,3 @@
+BasicSecurity {
+    ir.moke.jaas.security.SecurityLoginModule required;
+};

@@ -1,0 +1,3 @@
+myapp-security {
+    ir.moke.jaas.security.SecurityLoginModule required;
+};
