@@ -8,9 +8,10 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 public class TokenProvider {
     private static final Algorithm algorithm = Algorithm.HMAC256("secret");
 
-    public static String create() {
+    public static String create(String username) {
         return JWT.create()
                 .withIssuer("localhost")
+                .withClaim("user","admin")
                 .sign(algorithm);
     }
 
